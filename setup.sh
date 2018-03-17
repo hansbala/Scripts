@@ -30,9 +30,9 @@ yes | sudo apt install spotify-client
 
 # Install the Remmina Desktop client (I use the RDP protocol to manage a couple 
 # of client remote servers; so, it is a necessity for me)
-sudo apt-add-repository ppa:remmina-ppa-team/remmina-next
+yes | sudo apt-add-repository ppa:remmina-ppa-team/remmina-next
 sudo apt-get update
-sudo apt-get install remmina remmina-plugin-rdp remmina-plugin-secret
+yes | sudo apt install remmina remmina-plugin-rdp remmina-plugin-secret
 
 # Install Google Chrome
 cd /tmp
