@@ -41,10 +41,6 @@ sudo apt-get install remmina remmina-plugin-rdp remmina-plugin-secret
 # just type this. Am I drunk >3 ;') Rarrrr.
 # -- Local Applications
 
-mkdir -p ~/Videos/PopCornTime
-cd "/media/hansbala/Files/Computer Stuff/Applications/Linux/Pop_Corn_Time"
-tar -xf Popcorn-Time-0.3.10-Linux-64.tar.xz -C ~/Videos/PopCornTime
-
 cd "/media/hansbala/Files/Computer Stuff/Applications/Linux/Sublime"
 sudo gdebi -n sublime-text_build-3126_amd64.deb
 
@@ -54,6 +50,12 @@ sudo gdebi -n sublime-text_build-3126_amd64.deb
 cd /tmp
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo gdebi -n google-chrome-stable_current_amd64.deb
+
+# Install PopCornTime by downloading it and extracting it to ~/Videos/PopCornTime/
+cd /tmp
+wget https://get.popcorntime.sh/build/Popcorn-Time-0.3.10-Linux-64.tar.xz
+mkdir -p ~/Videos/PopCornTime
+sudo tar -xf Popcorn-Time-*.tar.xz -C ~/Videos/PopCornTime
 
 # Spitting dotfiles into my home directory. Rarrrrrr.
 cd /home/hansbala/
