@@ -13,7 +13,7 @@
 # You might not require the following if you are on another distro
 yes | sudo apt purge libappstream3
 
-# Initial System update and upgrade for latest packages and security upgrades
+# Initial system update and upgrade for latest packages and security upgrades
 sudo apt update
 yes | sudo apt upgrade
 
@@ -60,8 +60,7 @@ sudo mv dotfiles/* dotfiles/.* .
 echo "*" > .gitignore
 sudo rm -rf dotfiles
 
-# Again do system update and upgrade to refresh newly installed packages with gdebi
-# I'm looking at you google-chrome :')
+# System update and upgrade once more just to be sure
 sudo apt update
 yes | sudo apt upgrade
 
