@@ -18,8 +18,8 @@ sudo apt update
 yes | sudo apt upgrade
 
 # Miscellaneous programs that I require more or less on a day to day basis
-yes | sudo apt install vim zsh vlc axel git xclip gparted youtube-dl gdebi transmission openjdk-8-jdk
-yes | sudo apt install g++ python python-pip python-dev build-essential python3 python3-pip
+yes | sudo apt install vim zsh vlc axel git xclip gparted youtube-dl gdebi transmission apt-transport-https
+yes | sudo apt install g++ python python-pip python-dev build-essential python3 python3-pip openjdk-8-jdk
 
 # Spotify installation using repository (I still prefer this over using snaps)
 # Maybe in the future I'll port over applications that use snaps but until then ...
@@ -34,22 +34,16 @@ sudo apt-add-repository ppa:remmina-ppa-team/remmina-next
 sudo apt-get update
 sudo apt-get install remmina remmina-plugin-rdp remmina-plugin-secret
 
-# ------------------------ start of local applications ------------------
-
-# I should probably port over these local applications to use the web and make
-# it a it more pretty looking but I'm just too lazy. Hahahaha. Why the fuck did I
-# just type this. Am I drunk >3 ;') Rarrrr.
-# -- Local Applications
-
-cd "/media/hansbala/Files/Computer Stuff/Applications/Linux/Sublime"
-sudo gdebi -n sublime-text_build-3126_amd64.deb
-
-# ------------------------ End of local applications --------------------
-
 # Install Google Chrome
 cd /tmp
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo gdebi -n google-chrome-stable_current_amd64.deb
+
+# Install Sublime text
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+sudo apt update
+yes | sudo apt install sublime-text
 
 # Install PopCornTime by downloading it and extracting it to ~/Videos/PopCornTime/
 cd /tmp
