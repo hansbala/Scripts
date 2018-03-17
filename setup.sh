@@ -43,9 +43,6 @@ sudo apt-get install remmina remmina-plugin-rdp remmina-plugin-secret
 cd "/media/hansbala/Files/Computer Stuff/Applications/Linux/Java"
 ./Install_Java.sh
 
-cd "/media/hansbala/Files/Computer Stuff/Applications/Linux/Google_Chrome"
-sudo gdebi -n google-chrome-stable_current_amd64.deb
-
 mkdir -p ~/Videos/PopCornTime
 cd "/media/hansbala/Files/Computer Stuff/Applications/Linux/Pop_Corn_Time"
 tar -xf Popcorn-Time-0.3.10-Linux-64.tar.xz -C ~/Videos/PopCornTime
@@ -55,6 +52,10 @@ sudo gdebi -n sublime-text_build-3126_amd64.deb
 
 # ------------------------ End of local applications --------------------
 
+# Install Google Chrome
+cd /tmp
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo gdebi -n google-chrome-stable_current_amd64.deb
 
 # Spitting dotfiles into my home directory. Rarrrrrr.
 cd /home/hansbala/
