@@ -18,7 +18,7 @@ sudo apt update
 yes | sudo apt upgrade
 
 # Miscellaneous programs that I require more or less on a day to day basis
-yes | sudo apt install vim zsh vlc axel git xclip gparted youtube-dl gdebi transmission
+yes | sudo apt install vim zsh vlc axel git xclip gparted youtube-dl gdebi transmission openjdk-8-jdk
 yes | sudo apt install g++ python python-pip python-dev build-essential python3 python3-pip
 
 # Spotify installation using repository (I still prefer this over using snaps)
@@ -40,8 +40,6 @@ sudo apt-get install remmina remmina-plugin-rdp remmina-plugin-secret
 # it a it more pretty looking but I'm just too lazy. Hahahaha. Why the fuck did I
 # just type this. Am I drunk >3 ;') Rarrrr.
 # -- Local Applications
-cd "/media/hansbala/Files/Computer Stuff/Applications/Linux/Java"
-./Install_Java.sh
 
 mkdir -p ~/Videos/PopCornTime
 cd "/media/hansbala/Files/Computer Stuff/Applications/Linux/Pop_Corn_Time"
